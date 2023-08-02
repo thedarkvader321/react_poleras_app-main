@@ -150,6 +150,52 @@ nav ul li a {
   background-color: #f9f9f9;
 }
 
+
+
+/*Mostrar Poleras*/
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tarjeta h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  color: #666;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.imagen-polera {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Ajusta la altura máxima de la imagen según tu preferencia */
+}
+
+
 /* Media queries para estilos responsive */
 @media screen and (max-width: 600px) {
   /* Ajustar el ancho del contenedor principal y la tabla al 90% para pantallas pequeñas */
