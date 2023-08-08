@@ -1,4 +1,6 @@
-/* Estilos para el Header */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,600;0,800;1,400&display=swap');
+
+/* Estilos para el encabezado */
 .contenedor-header {
   position: fixed;
   top: 0;
@@ -18,7 +20,7 @@ header {
 .logo a {
   font-family: 'Righteous';
   font-size: 36px;
-  color: #1CB698;
+  color: #080501;
   text-decoration: none;
 }
 
@@ -32,29 +34,44 @@ nav ul li {
 }
 
 nav ul li a {
-  text-align: none;
-  color: #1CB698;
+  font-family: 'Righteous';
+  color: #080501;
   margin: 0 15px;
   padding: 3px;
-  transition: .5s;
+  transition: 0.5s;
   text-decoration: none;
 }
 
-/* Estilos para el botón del menú responsive (se oculta en pantallas grandes) */
+/* Estilos para el menú responsive */
 .nav-responsive {
   display: none;
+  cursor: pointer;
 }
 
-/* Media query para mostrar el botón del menú responsive solo en pantallas pequeñas */
-@media (max-width: 768px) {
-  .nav-responsive {
-    display: block;
+@media screen and (max-width:980px) {
+  nav{
+      display: none;
   }
-  
-  nav {
-    display: none;
+  .nav-responsive{
+      display: block;
+  }
+  nav.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: #dd6e0d;
+      width: 180px;
+  }
+  nav.responsive ul{
+      display: block !important;
+  }
+  nav.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px;
   }
 }
+
 
 .contenido {
   margin-top: 100px; /* Ajustar el valor según la altura del Header para evitar que el contenido quede oculto detrás del Header */
