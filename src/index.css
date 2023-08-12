@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,600;0,800;1,400&display=swap');
 
+
+
 /* Estilos para el encabezado */
 .contenedor-header {
   position: fixed;
@@ -224,3 +226,63 @@ nav ul li a {
     width: 90%;
   }
 }
+
+/* Inicio */
+
+.inicio {
+  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 0.1)),
+    url(https://scontent-scl2-1.xx.fbcdn.net/v/t1.6435-9/86737015_1404798813014341_4588029780942651392_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=fwuA5BVaRDMAX9vTMZD&_nc_ht=scontent-scl2-1.xx&oh=00_AfC-fOOF-Sm7wed_H76WmCqiiAKVI6DVZEmNtEZ6H-eKIg&oe=64FE257E); /* Agrega la URL de tu imagen de fondo aquí */
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.contenido-banner {
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.contenido-banner img {
+  margin-top: 40px;
+  border: 10px solid #dd6e0d;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 50%; /* Cambiado de 100% a 50% para que sea un círculo */
+}
+
+.contenido-banner h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  font-family: 'Righteous', sans-serif; /* Asegúrate de importar la fuente correctamente */
+}
+
+.contenido-banner h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.redes a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 50%; /* Cambiado de 100% a 50% para que sea un círculo */
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 10px 5px; /* Reducido el margen superior para mejor alineación */
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  background-color: #dd6e0d;
+}
+

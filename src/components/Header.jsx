@@ -31,7 +31,7 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="#sobremi" onClick={select}>
+              <Link to="/mostrar-poleras" onClick={select}>
                 Poleras
               </Link>
             </li>
